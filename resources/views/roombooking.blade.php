@@ -102,17 +102,17 @@
 
                     <div class="col-md-6">
                         <label class="form-label">Booked From</label>
-                        <input type="date" class="form-control" name="booked_from" required>
+                        <input type="datetime-local" class="form-control" name="booked_from" required>
                     </div>
 
                     <div class="col-md-6">
                         <label class="form-label">Booked To</label>
-                        <input type="date" class="form-control" name="booked_to" required>
+                        <input type="datetime-local" class="form-control" name="booked_to" required>
                     </div>
 
                     <div class="col-md-12">
                         <label class="form-label">Booking Created On</label>
-                        <input type="date" class="form-control" name="booking_created_on" required>
+                        <input type="datetime-local" class="form-control" name="booking_created_on" required>
                     </div>
                 </div>
 
