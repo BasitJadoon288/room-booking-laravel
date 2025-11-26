@@ -15,8 +15,7 @@ public function index()
     try {
 
         // GET API
-        $response = Http::withOptions(['verify' => true])
-                        ->get($this->apiBaseUrl . '/get');
+        $response = Http::get($this->apiBaseUrl . '/get');
 
         // Agar API 200 return kare
         if ($response->successful()) {
@@ -65,7 +64,7 @@ public function index()
                 'booking_created_on' => $data['booking_created_on']
             ];
 
-            $response = Http::withOptions(['verify' => true])->post($this->apiBaseUrl . '/add', $postData);
+        $response = Http::post($this->apiBaseUrl . '/add', $postData);
 
             if ($response->successful()) {
                 return redirect()->route('booking.index')->with('success', 'Room booked successfully!');
