@@ -8,7 +8,7 @@ use Carbon\Carbon;
 
 class RoomBookingController extends Controller
 {
-    private $apiBaseUrl = 'http://cts02.cremsenplayer.com:351/api/RoomBooking';
+    private $apiBaseUrl = 'https://cts02.cremsenplayer.com:351/api/RoomBooking';
 
 public function index()
 {
